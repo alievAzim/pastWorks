@@ -1,0 +1,9 @@
+#str{
+    width: 800px;
+    padding: 50px;
+    margin: 250px auto;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    height: auto;
+    font-size: 25px;
+}

@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+  
+  body {
+    background: #29313a;
+  }
+  /* здесь меняешь положение  */
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .search-box {
+    width: 450px;
+    height: 100px;
+    position: relative;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #62d474;
+  }
+  ::-moz-placeholder {
+    color: #62d474;
+  }
+  :-ms-input-placeholder {
+    color: #62d474;
+  }
+  :-moz-placeholder {
+    color: #62d474;
+  }
+  
+  .input.active {
+    width: 350px;
+    right: 100px;
+  }
+  
+  .btn.animate {
+    transform: rotate(-360deg);
+    right: 100px;
+  }
+  .search-box {
+    width: 350px;
+    height: 56px;
+    position: relative;
+}
+.input {
+    position: absolute;
+    top: 33px;
+    right: 55px;
+    box-sizing: border-box;
+    width: 0px;
+    height: 36px;
+    padding: 0px 15px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    color: #29313a;
+    transition: all 0.8s ease;
+}
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #62d474;
+    border-radius: 50%;
+    right: 53px;
+    top: 31px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.8s ease;
+}
+.fa {
+    position: absolute;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* text-align: center; */
+    right: 10px;
+    bottom: 10px;
+}

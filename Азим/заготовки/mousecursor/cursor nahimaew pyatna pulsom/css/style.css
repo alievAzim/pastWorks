@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle, #342c2c, #2b2527, #221f20, #191819, #111);
+    overflow: hidden;
+  }
+  .cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 10ms;
+    transition-timing-function: ease-out;
+    animation: pulse 0.8s infinite;
+  }
+  .cursor:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: -4px;
+    left: -4px;
+    border: 4px solid rgba(240, 208, 194, .5);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 100ms;
+    animation: pulse2 1s infinite;
+  }
+  @keyframes pulse {
+    from {
+      transform: scale(0.5, 0.5);
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(2.5, 2.5);
+      opacity: 0;
+    }
+  }
+  @keyframes pulse2 {
+    from {
+      transform: scale(0.5, 0.5);
+      opacity: 1;
+      box-shadow: 0 0 10px 8px #61ef61;
+    }
+    to {
+      transform: scale(2.5, 2.5);
+      opacity: 0;
+    }
+  }
+  .explosion {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 10ms;
+    transition-timing-function: ease-out;
+    animation: explosion 0.5s;
+  }
+  @keyframes explosion {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0px 0px #61ef61;
+    }
+    50% {
+      transform: scale(3);
+      box-shadow: 0 0 10px 8px #61ef61;
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0px 0px #61ef61;
+    }
+  }
+  blackhole {
+    border-radius: 100%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -4px;
+    left: -4px;
+    border-radius: 1px solid #20e3a2;
+    box-shadow: -10px -10px 30px #31c8a2, 10px 10px 30px #31c8a2;
+    animation: falling 0.9s linear;
+    animation-delay: 1s;
+    transform: translate(-50%, -50%);
+  }
+  @keyframes falling {
+    from {
+      opacity: 1;
+    }
+    to {
+      transform: translatey(1000px);
+      opacity: 0;
+    }
+  }

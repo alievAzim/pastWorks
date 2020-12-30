@@ -1,0 +1,68 @@
+.vid-container{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.bgvid{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.inner-container{
+    width: 400px;
+    height: 470px;
+    position: absolute;
+    top: calc(44vh - 200px);
+    left: calc(50vw - 200px);
+    overflow: hidden;
+}
+.box{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: rgba(0,0,0,0.13);
+    padding: 30px 0;
+}
+.box h1{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 30px;
+}
+.box input{
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    color: black;
+    border: 0;
+    border-radius: 50px;
+    font-size: 10px;
+    text-transform: uppercase;
+    
+}
+.box button{
+    background: orange;
+    border: 0;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    width: 230px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+.box p{
+    font-size: 16px;
+    text-align: center;
+}
+.box p span{
+    cursor: pointer;
+    color: white;
+}
+.box input:focus, .box input:active, .box button:active{
+    outline: none;
+}

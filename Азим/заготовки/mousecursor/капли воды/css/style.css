@@ -1,0 +1,14 @@
+body{
+    overflow: hidden;
+}
+.slide{
+    background-image: url(../img/parallax-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.slide h1{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 70px;
+}

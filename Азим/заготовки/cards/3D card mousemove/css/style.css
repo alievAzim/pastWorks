@@ -1,0 +1,56 @@
+.bg-parallax {
+  height: 100vh;
+  width: 100%;
+  background: rgba(167, 0, 245, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .card{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    width: fit-content;
+    margin-right: 30px;
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+}
+.card-item1{
+    background-image: url(../img/Japan_Waterfalls_Forests_450913.jpg);
+    box-shadow: 0 0 10px chartreuse;
+}
+.card-item{
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    transition: transform 0.2s;
+} */
+
+.card {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  width: fit-content;
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+}
+.card-item {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  box-shadow: 0 0 20px chartreuse;
+  margin-right: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-item1 {
+  background-image: url(../img/images.jpg);
+}
+.card-item2 {
+  background-image: url(../img/image09_iPhone6-6S-Plus.jpg);
+}
+.card-item3 {
+  background-image: url(../img/Japan_Waterfalls_Forests_450913.jpg);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="item input">
+			<form name="form">
+				<input type="text" name="textview" readonly>
+			</form>
+		</div>
+		<div class="item clean" onclick="clean()">C</div>
+		<div class="item back" onclick="delet()">&larr;</div>
+		<div class="item" onclick="insert('+')">+</div>
+		<div class="item" onclick="insert('-')">-</div>
+		<div class="item" onclick="insert('*')">&times;</div>
+		<div class="item" onclick="insert('/')">&divide;</div>
+		<div class="item" onclick="insert('7')">7</div>
+		<div class="item" onclick="insert('8')">8</div>
+		<div class="item" onclick="insert('9')">9</div>
+		<div class="item" onclick="insert('(')">(</div>
+		<div class="item" onclick="insert('4')">4</div>
+		<div class="item" onclick="insert('5')">5</div>
+		<div class="item" onclick="insert('6')">6</div>
+		<div class="item" onclick="insert(')')">)</div>
+		<div class="item" onclick="insert('1')">1</div>
+		<div class="item" onclick="insert('2')">2</div>
+		<div class="item" onclick="insert('3')">3</div>
+		<div class="item equal" onclick="equal()">=</div>
+		<div class="item zero" onclick="insert('0')">0</div>
+		<div class="item" onclick="insert('.')">.</div>
+	</div>
+
+
+
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="js.js"></script>
+</body>
+</html>

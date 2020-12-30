@@ -1,0 +1,71 @@
+body{
+    background-color: #111;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)) ,url(../img/pexels-photo-1250289.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fdfdfd;
+    width: 100vw;
+    font-weight: bold;
+    overflow: hidden;
+    font-family: sans-serif;
+    text-align: center;
+}
+.fly{
+    font-size: 7em;
+    margin: 35vh auto;
+    height: 20vh;
+    text-transform: uppercase;
+}
+.fly span{
+    display: block;
+    font-size: 0.4em;
+    opacity: 0.8;
+}
+.fly div{
+    position: absolute;
+    margin: 2vh 0;
+    opacity: 0;
+    left: 10vw;
+    width: 80vw;
+    animation:  switch 16s linear infinite;
+}
+
+.fly div:nth-child(1){
+    animation-delay: 1s;
+}
+.fly div:nth-child(2){
+    animation-delay: 3.5s;
+}
+.fly div:nth-child(3){
+    animation-delay: 6s;
+}
+.fly div:nth-child(4){
+    animation-delay: 8.5s;
+}
+.fly div:nth-child(5){
+    animation-delay: 11s;
+}
+@keyframes switch {
+    0%{
+        opacity: 0;
+        filter: blur(20px);transform: scale(12);
+    }
+    3%{
+        opacity: 1;
+        filter: blur(0);transform: scale(1);
+    }
+    10%{
+        opacity: 1;
+        filter: blur(0);transform: scale(0.9);
+    }
+    13%{
+        opacity: 0;
+        filter: blur(10px);transform: scale(0.1);
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}

@@ -1,0 +1,11 @@
+.smooth-scroll {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom, #05052d, #9e0606);
+  min-height: 300vh;
+}
